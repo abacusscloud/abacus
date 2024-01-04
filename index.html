@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Claim Your Reward</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/x-icon" href="CPY">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f0f0f0;
+    }
+    
+    .container {
+      text-align: center;
+    }
+    
+    h1 {
+      color: #333;
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+    
+    button {
+      padding: 15px 30px;
+      font-size: 1.2em;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Claim Your Reward</h1>
+    <button id="claimBtn" onclick="animateReward()">Claim</button>
+    <div class="rewardAnimation"></div>
+  </div>
+
+  <script>
+    function animateReward() {
+      const rewardAnimation = document.querySelector('.rewardAnimation');
+      rewardAnimation.style.transform = 'translate(-50%, -50%) scale(1)';
+      setTimeout(() => {
+        window.location.href = "login.html";
+      }, 1500);
+    }
+  </script>
+</body>
+</html>
